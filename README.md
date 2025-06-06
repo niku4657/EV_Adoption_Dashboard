@@ -58,8 +58,8 @@ To run this application locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone <your-github-repo-link-here>
-   cd <your-repo-name>
+   git clone https://github.com/niku4657/EV_Adoption_Dashboard.git
+   cd EV_Adoption_Dashboard
    ```
 2. **Create and activate a virtual environment (recommended):**
 
