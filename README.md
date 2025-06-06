@@ -1,24 +1,25 @@
 # Electric Vehicle (EV) Adoption Dashboard
 
-This project develops an interactive Dash application using Plotly and Python to visualize and analyze Electric Vehicle (EV) adoption trends across various U.S. states. The dashboard provides insights into EV registrations, charging infrastructure, and the relationship between EV adoption and socioeconomic factors. 
+This project develops an interactive Dash application using Plotly and Python to visualize and analyze Electric Vehicle (EV) adoption trends across various U.S. states. The dashboard provides insights into EV registrations, charging infrastructure, and the relationship between EV adoption and socioeconomic factors.
 
 ## Project Overview
 
-The primary goal of this application is to provide a user-friendly interface for exploring data related to EV adoption. The application is built to be deployment-ready and includes all necessary materials to run it in a local environment. 
+The primary goal of this application is to provide a user-friendly interface for exploring data related to EV adoption. The application is built to be deployment-ready and includes all necessary materials to run it in a local environment.
 
 ## Features
 
-* **Interactive Data Exploration**: Select multiple states, a year, and several metrics to compare EV registration trends. 
-* **Key Metrics Visualization**: View average EV share by state, and explore the relationship between EV registrations and charging outlets, as well as gasoline prices. 
-* **Detailed State-Level Analysis**: Drill down into specific states and years to see the breakdown of charging outlet types (Level 1, Level 2, DC Fast) and key socioeconomic indicators. 
-* **Beliefs Comparison**: Compare public beliefs regarding climate change and environmental impact across selected states. 
+* **Interactive Data Exploration**: Select multiple states, a year, and several metrics to compare EV registration trends.
+* **Key Metrics Visualization**: View average EV share by state, and explore the relationship between EV registrations and charging outlets, as well as gasoline prices.
+* **Detailed State-Level Analysis**: Drill down into specific states and years to see the breakdown of charging outlet types (Level 1, Level 2, DC Fast) and key socioeconomic indicators.
+* **Beliefs Comparison**: Compare public beliefs regarding climate change and environmental impact across selected states.
 
 ## Data Sources
 
 The data used in this application is primarily sourced from:
-* [EV Adoption in USA (2018-2023) on Kaggle](https://www.kaggle.com/datasets/surajshivakumar/ev-adoption-usa/data) by Suraj Shivakumar.
 
-The data is consolidated into a single `EV_Data.csv` file. The emphasis of this project is on the visualizations and communication of insights rather than the data ingestion process itself. The `EV_Data.csv` file is included for redundancy and ease of use. 
+* [EV Adoption in USA (2016-2023) on Kaggle](https://www.kaggle.com/datasets/surajshivakumar/ev-adoption-usa/data) by Suraj Shivakumar.
+
+The data is consolidated into a single `EV_Data.csv` file. The emphasis of this project is on the visualizations and communication of insights rather than the data ingestion process itself. The `EV_Data.csv` file is included for redundancy and ease of use.
 
 ### Variable Descriptions
 
@@ -54,34 +55,35 @@ The variables we use from the `EV_Data.csv` file are:
 
 To run this application locally, follow these steps:
 
-1.  **Clone the repository:**
-    ```bash
-    git clone <your-github-repo-link-here>
-    cd <your-repo-name>
-    ```
+1. **Clone the repository:**
 
-2.  **Create and activate a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    # On Windows
-    .\venv\Scripts\activate
-    # On macOS/Linux
-    source venv/bin/activate
-    ```
+   ```bash
+   git clone <your-github-repo-link-here>
+   cd <your-repo-name>
+   ```
+2. **Create and activate a virtual environment (recommended):**
 
-3.  **Install the required packages:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+   ```bash
+   python -m venv venv
+   # On Windows
+   .\venv\Scripts\activate
+   # On macOS/Linux
+   source venv/bin/activate
+   ```
+3. **Install the required packages:**
 
-4.  **Run the Dash application:**
-    ```bash
-    jupyter notebook dashboard.ipynb
-    ```
-    Then, within the notebook, run all cells. The last cell `app.run(debug=True)` will start the server.
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Run the Dash application:**
 
-5.  **Access the application:**
-    Open your web browser and navigate to `http://127.0.0.1:8050/`.
+   ```bash
+   jupyter notebook dashboard.ipynb
+   ```
+
+   Then, within the notebook, run all cells. The last cell `app.run(debug=True)` will start the server.
+5. **Access the application:**
+   Open your web browser and navigate to `http://127.0.0.1:8050/`.
 
 ## Application Structure
 
